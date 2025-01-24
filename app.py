@@ -32,7 +32,6 @@ movies_dict = pickle.load(open('movies_dict.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
 with gzip.open("similarity_compressed.pkl.gz", "rb") as f_in:
     similarity = pickle.load(f_in)
-#similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 st.title('Movie Recommender System')
 
